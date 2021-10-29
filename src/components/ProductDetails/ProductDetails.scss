@@ -1,0 +1,35 @@
+.details {
+  margin-bottom: 72px;
+  &__navigation {
+    & > li {
+      display: inline-block;
+      margin-bottom: 14px;
+      font-family: "Circular Std";
+      font-weight: 500;
+      font-size: 19.2px;
+      line-height: 24px;
+      margin-right: 24px;
+      color: var(--darker-grey);
+      &.active {
+        color: var(--black);
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+    }
+  }
+  &__description {
+    font-family: "Circular Std Book";
+    color: var(--darker-grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    .--description-0,
+    .--description-1,
+    .--description-2 {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.productTitle {
+  .new-release {
+    color: var(--red);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13.33px;
+    line-height: 16px;
+    font-family: "Circular Std Book";
+    letter-spacing: 1.11px;
+  }
+  h1 {
+    font-family: "Circular Std Book";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 24px;
+    color: var(--balck);
+  }
+  h2 {
+    font-family: "Circular Std Book";
+    font-weight: 400;
+    font-size: 27.648;
+    line-height: 32px;
+    color:var(--darker-grey);
+  }
+  .starting-at {
+    color:var(--darker-grey);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13.33px;
+    line-height: 16px;
+    margin-top: 48px;
+    font-family: "Circular Std Book";
+    letter-spacing: 1.11px;
+  }
+  .price {
+    font-family: "Circular Std Book";
+    color: var(--balck);
+    margin-top: 8px;
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+  }
+}

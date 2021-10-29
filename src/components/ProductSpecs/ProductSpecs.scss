@@ -1,0 +1,32 @@
+.specs {
+  margin-bottom: 72px;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0;
+    border-top: 1px solid var(--dark-grey);
+    &:last-child {
+      border-bottom: 1px solid var(--dark-grey);
+    }
+    .title {
+      font-family: "Circular Std";
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+      color: var(--black);
+    }
+    .description {
+      font-family: "Circular Std Book";
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .specs__item {
+    flex-direction: column;
+  }
+}
+

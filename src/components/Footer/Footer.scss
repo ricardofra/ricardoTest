@@ -1,0 +1,110 @@
+.footer {
+  height: 152px;
+  background-color: var(--grey);
+  border-top: 1px solid var(--dark-grey);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    height: 152px;
+    justify-content: space-between;
+  }
+  &__left-content {
+    display: flex;
+    & > div {
+      width: 280px;
+      margin-right: 32px;
+    }
+    h4 {
+      color: var(--black);
+      font-family: "Circular Std";
+      line-height: 24px;
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    p {
+      color: var(--darker-grey);
+      font-family: "Circular Std";
+      line-height: 20px;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  &__right-contetn {
+    display: flex;
+    align-items: center;
+    &--price {
+      font-family: "Circular Std Book";
+      text-align: right;
+      margin-right: 32px;
+      h4 {
+        color: var(--black);
+        font-size: 27.65px;
+        line-height: 30px;
+        font-weight: 700;
+      }
+      p {
+        color: var(--darker-grey);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+    }
+    button.btn {
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 16px 24px;
+      cursor: pointer;
+      border-radius: 8px;
+      background-color: var(--cian);
+      border: 3px solid var(--grey);
+      &:hover {
+        background-color: var(--light-cian);
+      }
+      &:focus {
+        box-sizing: border-box;
+        border: 3px solid var(--dark-grey);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    position: initial;
+    &__left-content {
+      display: block;
+      width: 140px;
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    position: initial;
+    height: 182px;
+    .wrapper {
+      justify-content: flex-end;
+      height: 182px;
+    }
+    &__left-content {
+      display: none;
+    }
+    &__right-contetn {
+      flex-direction: column;
+      align-items: flex-end;
+      &--price {
+        margin-right: 0;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
